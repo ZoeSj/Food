@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="author" content=" Zoe" />
+<meta name="Copyright" content="" />
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<title>预定</title>
+<script type="text/javascript" src="js/food/jquery.min.js"></script>
+<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" href="css/styles.css" type="text/css">
+<script type="text/javascript" src="js/food/jquery.min.js"></script>
+<script>
+function check(){
+	alert(
+	name+'您好，这是您的订单，请确认。'+'\n'
+	)
+	}
+</script>
+</head>
+<body>
+<div class="wrap bc">
+  <div class="title tc pr top"> <span class="back-btn"></span>纳入口袋
+    <div > </div>
+  </div>
+  <form class="book" method="post" action="">
+    <input type="hidden" class="countNum" value="10" />
+    <div class="info mt10">
+      <h4>
+        <lable>商品名称：</lable>
+        <span>意大利费列罗巧克力 (Ferrero Rocher) </span></h4>
+      <h4>
+        <lable>商品单价：</lable>
+        <span>89元</span></h4>
+      <h4 class="num">
+        <lable class="fl">商品数量：</lable>
+        <span class="subtract">-</span>
+        <input value="1" name="count" class="count" readonly = "true"/>
+        <span class="add">+</span></h4>
+      <h5 align="right">总共：
+        <input  readonly = "true"/>
+      </h5>
+    </div>
+    <p>预定人
+      <input type="text" name="name" class="name" value="输入您的姓名" />
+    </p>
+    <p>手机号
+      <input type="text" name="mobile" class="mobile" value="输入您的手机号" />
+    </p>
+    <p>派送处
+      <input type="text" name="name" class="name" value="输入您的地址" />
+    </p>
+    <a class="title submit-btn mt10 tc" onclick="check()" >提交订单</a>
+  </form>
+</div>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
